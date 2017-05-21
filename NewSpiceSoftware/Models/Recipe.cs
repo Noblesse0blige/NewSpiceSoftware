@@ -10,7 +10,9 @@ namespace NewSpiceSoftware.Models
 {
     public class Recipe
     {
-        private string configFilePath = ""; //TODO: Create SQLITE config file path and put it here.
+        private string configFilePath = "RecipesDatabase"; //TODO: Create SQLITE config file path and put it here.
+
+        [Required]
         private int RecipeID { get; set; }
 
         [Required]
