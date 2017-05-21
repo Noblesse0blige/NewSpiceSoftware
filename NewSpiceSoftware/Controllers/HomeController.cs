@@ -13,16 +13,18 @@ namespace NewSpiceSoftware.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About NewSpice Software";
 
             return View();
         }
 
+        [AllowAnonymous]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact the Author";
 
             return View();
         }
